@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<ROWSET>
+ <ROW>
+  <CPU_COST>54607</CPU_COST>
+  <IO_COST>3</IO_COST>
+  <TIME>1</TIME>
+  <STATEMENT_ID>2676497798690395901</STATEMENT_ID>
+  <PLAN_ID>1194008</PLAN_ID>
+  <TIMESTAMP>2023-04-24T04:10:12.000</TIMESTAMP>
+  <OPERATION>SELECT STATEMENT</OPERATION>
+  <OPTIMIZER>ALL_ROWS</OPTIMIZER>
+  <ID>0</ID>
+  <DEPTH>0</DEPTH>
+  <POSITION>3</POSITION>
+  <COST>3</COST>
+  <CARDINALITY>100</CARDINALITY>
+  <BYTES>1800</BYTES>
+ </ROW>
+ <ROW>
+  <CPU_COST>54607</CPU_COST>
+  <IO_COST>3</IO_COST>
+  <PROJECTION>&quot;WEBSITE&quot;.&quot;ID&quot;[NUMBER,22], &quot;WEBSITE&quot;.&quot;WEBSITE_LINK&quot;[VARCHAR2,50], &quot;WEBSITE&quot;.&quot;SHOP_ID&quot;[NUMBER,22]</PROJECTION>
+  <TIME>1</TIME>
+  <QBLOCK_NAME>SEL$1</QBLOCK_NAME>
+  <STATEMENT_ID>2676497798690395901</STATEMENT_ID>
+  <PLAN_ID>1194008</PLAN_ID>
+  <TIMESTAMP>2023-04-24T04:10:12.000</TIMESTAMP>
+  <REMARKS>&lt;remarks&gt;&lt;info type=&quot;has_user_tab&quot;&gt;yes&lt;/info&gt;&lt;info type=&quot;db_version&quot;&gt;19.0.0.0&lt;/info&gt;&lt;info type=&quot;parse_schema&quot;&gt;&lt;![CDATA[&quot;WKSP_NSSTT&quot;]]&gt;&lt;/info&gt;&lt;info type=&quot;plan_hash_full&quot;&gt;2047604906&lt;/info&gt;&lt;info type=&quot;plan_hash&quot;&gt;2002444036&lt;/info&gt;&lt;info type=&quot;plan_hash_2&quot;&gt;2047604906&lt;/info&gt;&lt;stats type=&quot;compilation&quot;&gt;&lt;stat name=&quot;bg&quot;&gt;0&lt;/stat&gt;&lt;/stats&gt;&lt;qb_registry&gt;&lt;q o=&quot;2&quot; f=&quot;y&quot;&gt;&lt;n&gt;&lt;![CDATA[SEL$1]]&gt;&lt;/n&gt;&lt;f&gt;&lt;h&gt;&lt;t&gt;&lt;![CDATA[WEBSITE]]&gt;&lt;/t&gt;&lt;s&gt;&lt;![CDATA[SEL$1]]&gt;&lt;/s&gt;&lt;/h&gt;&lt;/f&gt;&lt;/q&gt;&lt;/qb_registry&gt;&lt;outline_data&gt;&lt;hint&gt;&lt;![CDATA[FULL(@&quot;SEL$1&quot; &quot;WEBSITE&quot;@&quot;SEL$1&quot;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OUTLINE_LEAF(@&quot;SEL$1&quot;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[ALL_ROWS]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OPT_PARAM(&apos;_fix_control&apos; &apos;20648883:0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[DB_VERSION(&apos;19.1.0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OPTIMIZER_FEATURES_ENABLE(&apos;19.1.0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[IGNORE_OPTIM_EMBEDDED_HINTS]]&gt;&lt;/hint&gt;&lt;/outline_data&gt;&lt;/remarks&gt;</REMARKS>
+  <OPERATION>TABLE ACCESS</OPERATION>
+  <OPTIONS>STORAGE FULL</OPTIONS>
+  <OBJECT_OWNER>WKSP_NSSTT</OBJECT_OWNER>
+  <OBJECT_NAME>WEBSITE</OBJECT_NAME>
+  <OBJECT_ALIAS>&quot;WEBSITE&quot;@&quot;SEL$1&quot;</OBJECT_ALIAS>
+  <OBJECT_INSTANCE>1</OBJECT_INSTANCE>
+  <OBJECT_TYPE>TABLE</OBJECT_TYPE>
+  <OPTIMIZER>ANALYZED</OPTIMIZER>
+  <ID>1</ID>
+  <PARENT_ID>0</PARENT_ID>
+  <DEPTH>1</DEPTH>
+  <POSITION>1</POSITION>
+  <COST>3</COST>
+  <CARDINALITY>100</CARDINALITY>
+  <BYTES>1800</BYTES>
+ </ROW>
+ <ROW>
+  <CPU_COST>54607</CPU_COST>
+  <IO_COST>3</IO_COST>
+  <TIME>1</TIME>
+  <STATEMENT_ID>2676498270955396333</STATEMENT_ID>
+  <PLAN_ID>1194009</PLAN_ID>
+  <TIMESTAMP>2023-04-24T04:10:17.000</TIMESTAMP>
+  <OPERATION>SELECT STATEMENT</OPERATION>
+  <OPTIMIZER>ALL_ROWS</OPTIMIZER>
+  <ID>0</ID>
+  <DEPTH>0</DEPTH>
+  <POSITION>3</POSITION>
+  <COST>3</COST>
+  <CARDINALITY>100</CARDINALITY>
+  <BYTES>1800</BYTES>
+ </ROW>
+ <ROW>
+  <CPU_COST>54607</CPU_COST>
+  <IO_COST>3</IO_COST>
+  <PROJECTION>&quot;WEBSITE&quot;.&quot;ID&quot;[NUMBER,22], &quot;WEBSITE&quot;.&quot;WEBSITE_LINK&quot;[VARCHAR2,50], &quot;WEBSITE&quot;.&quot;SHOP_ID&quot;[NUMBER,22]</PROJECTION>
+  <TIME>1</TIME>
+  <QBLOCK_NAME>SEL$1</QBLOCK_NAME>
+  <STATEMENT_ID>2676498270955396333</STATEMENT_ID>
+  <PLAN_ID>1194009</PLAN_ID>
+  <TIMESTAMP>2023-04-24T04:10:17.000</TIMESTAMP>
+  <REMARKS>&lt;remarks&gt;&lt;info type=&quot;has_user_tab&quot;&gt;yes&lt;/info&gt;&lt;info type=&quot;db_version&quot;&gt;19.0.0.0&lt;/info&gt;&lt;info type=&quot;parse_schema&quot;&gt;&lt;![CDATA[&quot;WKSP_NSSTT&quot;]]&gt;&lt;/info&gt;&lt;info type=&quot;plan_hash_full&quot;&gt;2047604906&lt;/info&gt;&lt;info type=&quot;plan_hash&quot;&gt;2002444036&lt;/info&gt;&lt;info type=&quot;plan_hash_2&quot;&gt;2047604906&lt;/info&gt;&lt;stats type=&quot;compilation&quot;&gt;&lt;stat name=&quot;bg&quot;&gt;0&lt;/stat&gt;&lt;/stats&gt;&lt;qb_registry&gt;&lt;q o=&quot;2&quot; f=&quot;y&quot;&gt;&lt;n&gt;&lt;![CDATA[SEL$1]]&gt;&lt;/n&gt;&lt;f&gt;&lt;h&gt;&lt;t&gt;&lt;![CDATA[WEBSITE]]&gt;&lt;/t&gt;&lt;s&gt;&lt;![CDATA[SEL$1]]&gt;&lt;/s&gt;&lt;/h&gt;&lt;/f&gt;&lt;/q&gt;&lt;/qb_registry&gt;&lt;outline_data&gt;&lt;hint&gt;&lt;![CDATA[FULL(@&quot;SEL$1&quot; &quot;WEBSITE&quot;@&quot;SEL$1&quot;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OUTLINE_LEAF(@&quot;SEL$1&quot;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[ALL_ROWS]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OPT_PARAM(&apos;_fix_control&apos; &apos;20648883:0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[DB_VERSION(&apos;19.1.0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[OPTIMIZER_FEATURES_ENABLE(&apos;19.1.0&apos;)]]&gt;&lt;/hint&gt;&lt;hint&gt;&lt;![CDATA[IGNORE_OPTIM_EMBEDDED_HINTS]]&gt;&lt;/hint&gt;&lt;/outline_data&gt;&lt;/remarks&gt;</REMARKS>
+  <OPERATION>TABLE ACCESS</OPERATION>
+  <OPTIONS>STORAGE FULL</OPTIONS>
+  <OBJECT_OWNER>WKSP_NSSTT</OBJECT_OWNER>
+  <OBJECT_NAME>WEBSITE</OBJECT_NAME>
+  <OBJECT_ALIAS>&quot;WEBSITE&quot;@&quot;SEL$1&quot;</OBJECT_ALIAS>
+  <OBJECT_INSTANCE>1</OBJECT_INSTANCE>
+  <OBJECT_TYPE>TABLE</OBJECT_TYPE>
+  <OPTIMIZER>ANALYZED</OPTIMIZER>
+  <ID>1</ID>
+  <PARENT_ID>0</PARENT_ID>
+  <DEPTH>1</DEPTH>
+  <POSITION>1</POSITION>
+  <COST>3</COST>
+  <CARDINALITY>100</CARDINALITY>
+  <BYTES>1800</BYTES>
+ </ROW>
+</ROWSET>
