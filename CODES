@@ -1,0 +1,79 @@
+1)  Add user-defined exception which disallows to enter title of item (e.g. book) to be less than 5 characters
+
+DECLARE
+  product_name VARCHAR2(225) := 'ball'; 
+  min_length CONSTANT INTEGER := 5;
+  length_error EXCEPTION;
+  
+BEGIN
+  IF LENGTH(product_name) < min_length THEN
+    RAISE length_error;
+  END IF;
+  
+EXCEPTION
+  WHEN length_error THEN
+    DBMS_OUTPUT.PUT_LINE('Error: product name length must be at least '  min_length ' characters.');
+END;
+
+
+2)Procedure which does group by information 
+
+CREATE OR REPLACE PROCEDURE group_by_tako1 
+IS
+  c SYS_REFCURSOR;
+BEGIN
+  OPEN c FOR
+    SELECT staff.staff_id, staff.staff_name, staff.staff_phone
+    FROM staff
+    GROUP BY staff.staff_id, staff.staff_name, staff.staff_phone;
+  DBMS_SQL.RETURN_RESULT(c);
+END;
+ 
+ 
+3)  Function which counts the number of records 
+
+CREATE OR REPLACE FUNCTION totalStaff
+RETURN number IS
+   total number(3):=0;
+BEGIN 
+ SELECT count(*) into total
+ FROM STAFF;
+ return total;
+ END;
+ 
+ 
+ DECLARE
+  c number(3);
+BEGIN
+ c:=totalStaff();
+ dbms_output.put_line('Total number of staffs: '|| c);
+ END;
+ 
+4)Create a trigger before insert on any entity which will show the current number of rows in the table
+
+CREATE OR REPLACE TRIGGER tako_count
+BEFORE INSERT ON product
+FOR EACH ROW
+DECLARE
+  product_id NUMBER;
+BEGIN
+  SELECT COUNT(*) INTO product_id FROM product;
+  DBMS_OUTPUT.PUT_LINE('Number of rows before insert: ' || product_id);
+END;
+ 
+ 
+5)Procedure which uses SQL%ROWCOUNT to determine the number of rows affected
+
+CREATE OR REPLACE PROCEDURE affect AS 
+   total_rows number(2); 
+BEGIN 
+   UPDATE staff_datail2
+   SET salary = salary + 1000
+   WHERE staff_speciality='marketer';
+   IF SQL%ROWCOUNT = 0 THEN 
+      dbms_output.put_line('no rows selected'); 
+   ELSIF SQL%ROWCOUNT > 0 THEN 
+      total_rows := SQL%ROWCOUNT;
+      dbms_output.put_line(total_rows || ' rows updated'); 
+   END IF;  
+END;
